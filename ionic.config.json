@@ -1,0 +1,7 @@
+{
+  "name": "libretaMagica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,112 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="background-color: rgb(0, 10, 60) !important; ">
+    <h3 style="color:rgb(212, 91, 0); padding-left: 12px;" >Mis audios</h3>
+    <ion-button href="#" color="none" slot="end"><ion-icon name="search"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+
+  <!--Primer card de audio super reproductor-->
+  <ion-card>
+    <ion-item href="#" class="ion-activated"
+    style="border-bottom: 0.1px dashed rgba(255, 255, 255, 0.8);">
+      <ion-icon style="color: red;" name="play-circle" slot="start"></ion-icon>
+      <ion-label>Reproducir todo</ion-label>
+      <ion-icon style="color: rgb(212, 91, 0);" name="trash-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <!--Card's de los audios-->
+      <ion-card-audios>
+        <!--Primer card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">First audio</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Segundo card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Second audio</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Tercer card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Clase diciembre</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Cuarto card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Aldo Yahir</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Quinto card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Diseño de Apps</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Sexto card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Presentación Final</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Septimo card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Luis Cordoba - clase 1</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <!--Octavo card de audio-->
+        <ion-card>
+          <ion-item class="ion-activated">
+            <ion-icon style="color: green;" name="play-outline"></ion-icon>
+            <ion-nombre-audio style="margin: 5px;">Audio 8</ion-nombre-audio>
+            <ion-icon name="ellipsis-vertical" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+      </ion-card-audios>
+
+  </ion-card>
+  
+</ion-content>
+
+<!--Card del reproductor-->
+<ion-card style="z-index: 10px;">
+  <ion-item class="activated">
+    <ion-icon name="image-outline" style="color: yellow;"></ion-icon>
+    <ion-nombreAudio style="margin-left: 10px;">Aldo Yahir</ion-nombreAudio>
+    <ion-controls slot="end" style="font-size: 22px;">
+      <ion-icon name="play-skip-back-outline"></ion-icon>
+      <ion-icon name="play-outline"></ion-icon>
+      <ion-icon name="play-skip-forward-outline"></ion-icon>
+    </ion-controls>
+  </ion-item>
+</ion-card>
